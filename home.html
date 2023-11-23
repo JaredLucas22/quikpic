@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Pick - Home</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <a class="navbar-brand" href="#">
+    <img src="logo.png" width="50" height="50" class="d-inline-block align-top" alt="Logo">
+  </a>
+  <h1 style="color: #f56632; font-size: 25px;"> Quick Pick </h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="products.html">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="promos.html">Promos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="owner.html">Owner</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Fixed Banner-->
+<div class="banner"> 
+  <img src="banner.png" alt="" width="60%">
+</div>
+
+<!-- Carousel Section -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <img src="promo1.png" class="d-block w-100 custom-img alt="First slide">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="promo2.png" class="d-block w-100 custom-img alt="Second slide">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="promo3.png" class="d-block w-100 custom-img alt="Third slide">
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <img src="promo1.png" class="d-block w-100 custom-img alt="Fourth slide">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="promo2.png" class="d-block w-100 custom-img alt="Fifth slide">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="promo3.png" class="d-block w-100 custom-img alt="Sixth slide">
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <img src="promo1.png" class="d-block w-100 custom-img alt="Fourth slide">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="promo2.png" class="d-block w-100 custom-img alt="Fifth slide">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img src="promo3.png" class="d-block w-100 custom-img alt="Sixth slide">
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <button class="button"> See more promos </button>
+</div>
+
+
+<!-- Bestselling Products -->
+<div class="best-selling">
+  <!-- Product 1-->
+  <div class="row">
+    <div class="col-md-6">
+      <div class="product-card">
+        <div class="main-image">
+          <img src="Best-Selling Products/milo1.png" style="width: 300px;" alt="Product 1" id="mainImage">
+        </div>
+      </div>
+      <div class="small-images">
+        <!-- Small Images for Product 1 -->
+        <img src="Best-Selling Products/milo1.png" alt="Small Image 1" onclick="changeMiloImage('Best-Selling Products/milo1.png')">
+        <img src="Best-Selling Products/Untitled_design__3_-removebg-preview.png" alt="Small Image 2" onclick="changeMiloImage('Best-Selling Products/Untitled_design__3_-removebg-preview.png')">
+        <img src="Best-Selling Products/Untitled_design__4_-removebg-preview.png" alt="Small Image 3" onclick="changeMiloImage('Best-Selling Products/Untitled_design__4_-removebg-preview.png')">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="product-details">
+        <h2>Milo Chocolate Drink Mix</h2>
+        <p>
+          Milo Chocolate Drink Mix is a beloved beverage enjoyed globally for its delicious taste and nutritional benefits. It's crafted from a unique blend of malted barley, cocoa, milk powder, and essential vitamins and minerals, creating a rich, chocolatey flavor that's both indulgent and energizing.
+          <br><br>
+          This drink is renowned for its versatility; it can be enjoyed hot or cold, catering to different preferences and climates. Its versatility extends beyond being a delightful drink on its own—it's a versatile ingredient for creating various desserts, shakes, and even as a flavor enhancer for baking.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--Product 2-->
+  <div class="row">
+    <div class="col-md-6">
+      <div class="product-details">
+        <h2>Canned Goods</h2>
+        <p>
+          Milo Chocolate Drink Mix is a beloved beverage enjoyed globally for its delicious taste and nutritional benefits. It's crafted from a unique blend of malted barley, cocoa, milk powder, and essential vitamins and minerals, creating a rich, chocolatey flavor that's both indulgent and energizing.
+          <br><br>
+          This drink is renowned for its versatility; it can be enjoyed hot or cold, catering to different preferences and climates. Its versatility extends beyond being a delightful drink on its own—it's a versatile ingredient for creating various desserts, shakes, and even as a flavor enhancer for baking.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="product-card">
+        <div class="main-image">
+          <img src="Best-Selling Products/goods1.png" style="width: 400px;" alt="Product 2" id="cannedGoods">
+        </div>
+      </div>
+      <div class="small-images">
+        <!-- Small Images for Product 2 -->
+        <img src="Best-Selling Products/goods1.png" alt="Small Image 1" onclick="changeCannedImage('Best-Selling Products/goods1')">
+        <img src="Best-Selling Products/goods2.png" alt="Small Image 2" onclick="changeCannedImage('Best-Selling Products/goods2')">
+        <img src="Best-Selling Products/goods3.png" alt="Small Image 3" onclick="changeCannedImage('Best-Selling Products/goods3')">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Location -->
+<div class="location"></div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-column">
+      <img src="logo.png" width="60" height="60" alt="Company Logo">
+      <p>Analyn & Bong's Apartment, Mercury Street,</p>
+      <p>Barangay Santo Nino, San Fernando Subdivision,</p>
+      <p>City of San Fernando, Pampanga</p>
+    </div>
+
+    <div class="footer-column">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="owner.html">Owner</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <ul>
+        <h3>Contact Us</h3>
+        <li><i class="bi bi-telephone"></i>&nbsp;&nbsp; 0966 948 7089</li>
+        <li><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i>&nbsp;&nbsp;Facebook Page</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2023 Quick Pick All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<!-- JavaScript -->
+<script>
+  function changeMiloImage(imageSrc) {
+    document.getElementById('mainImage').src = imageSrc;
+  }
+
+  function changeCannedImage(imageSrc) {
+    document.getElementById('cannedGoods').src = imageSrc + '.png'; // Ensure the extension is added
+  }
+</script>
+
+
+
+
+<!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
