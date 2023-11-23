@@ -1,0 +1,283 @@
+html, body {
+  background-color: rgb(203, 203, 203);
+  text-align: center;
+}
+
+.navbar-custom {
+  background-color: black;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-custom .navbar-nav .nav-link.active {
+  color: #F05924;
+}
+
+.nav-item {
+  margin-left: 30px;
+}
+
+.navbar-toggler {
+  background-color: rgb(0, 0, 0); /* Change the background color to your desired color */
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.carousel {
+  background-color: #d1a899;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.custom-img {
+  border-radius: 20px;
+}
+
+.carousel-control-prev-icon {
+  margin-right: 60px;
+}
+
+.carousel-control-next-icon {
+  margin-left: 60px;
+}
+
+.carousel-inner .row {
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+.button {
+margin: 3% 0; /* Adjust margin based on your design */
+font-size: 18px; /* Relative font size based on viewport width */
+border: none;
+border-radius: 20px;
+width: 30%; /* Adjust width based on your design */
+height: 8%; /* Adjust height based on your design */
+}
+
+/* Example of a media query for smaller screens */
+@media screen and (max-width: 768px) {
+.button {
+    font-size: 3vw;
+    width: 50%;
+    height: 10%;
+}
+}
+
+
+/* Best-selling products */
+
+.best-selling {
+width: 80%;
+max-width: 1200px; /* Set a maximum width */
+margin: 50px auto; /* Center the section */
+padding: 20px;
+border-radius: 20px;
+background-color: rgb(209, 209, 209);
+box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+.col-md-6 {
+flex: 0 0 100%; /* Take full width on small screens */
+max-width: 100%;
+}
+
+
+.product-card {
+  display: flex;
+}
+
+.main-image {
+  margin: auto;
+  margin-top: 50px;
+}
+
+.product-details {
+  text-align: justify;
+  margin: 150px 50px; /* Adjust margin as needed */
+}
+
+.product-details h2 {
+  margin-top: 100px;
+}
+
+.product-details p {
+  margin: 0px 30px;
+  text-align: justify;
+}
+
+.small-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.small-images img {
+  width: 40px; 
+  height: 60px;
+  cursor: pointer; 
+  margin: 10px; 
+}
+
+.product-card,
+.product-details,
+.main-image,
+.small-images {
+width: 100%;
+text-align: center; /* Center content */
+}
+
+.main-image img {
+max-width: 100%;
+height: auto; /* Maintain aspect ratio */
+margin-top: 20px;
+}
+
+.product-details {
+margin: 20px 0;
+}
+
+.small-images img {
+width: 60px;
+height: 80px;
+margin: 10px;
+}
+
+/* Media query for smaller screens */
+@media screen and (min-width: 768px) {
+.best-selling {
+  width: 90%;
+}
+
+.col-md-6 {
+  flex: 0 0 48%; /* Two columns on larger screens */
+  max-width: 48%;
+  margin: 1%; /* Adjust margin between columns */
+}
+}
+
+
+/* location */
+.location {
+  height: 250px;
+  width: 60%;
+  background-color: #F05924;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+  /* Footer */
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+}
+
+.footer-content {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: flex-start;
+padding: 0 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.footer-column {
+flex: 1;
+text-align: left;
+padding: 10px;
+box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.footer-column p {
+margin: 5px 0;
+}
+
+.footer-column img {
+width: 60px;
+height: 60px;
+margin-bottom: 10px;
+}
+
+.footer-column ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+text-align: left; /* Align text to the left */
+}
+
+.footer-column ul li {
+margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+text-decoration: none;
+color: #fff;
+}
+
+.footer-column h3 {
+font-size: 30px;
+margin-bottom: 10px;
+}
+
+.footer-bottom {
+text-align: center;
+margin-top: 20px;
+}
+
+/* Media query for tablet and larger screens */
+@media screen and (min-width: 768px) {
+.footer-column {
+  flex: 1 1 auto; /* Reset flex properties */
+  max-width: none; /* Reset max-width */
+  margin: 0 10px; /* Adjust margin for spacing */
+}
+
+.footer-column ul {
+  margin-left: 0; /* Reset margin-left */
+}
+}
+
+
+/* Product Page*/
+.products-section {
+  background-color: #d1a899;
+  width: 60%;
+  height: 100%;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.products-section h2 {
+  margin: 50px 0px;
+}
+
+.bg-custom {
+  background-color: white;
+}

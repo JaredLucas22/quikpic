@@ -266,4 +266,16 @@ footer {
   }
 }
 
-    
+
+/* Product Page*/
+
+.p-carousel {
+  background-color: #d1a899;
+  width: 60%;
+  height: 350px;
+  border-radius: 20px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
