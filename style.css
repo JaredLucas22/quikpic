@@ -46,10 +46,9 @@ html, body {
     height: 500px;
 }
 
-.custom-img {
-    height: 400px;
-    width: 500px;
-    border-radius: 20px;
+.carousel-item .row img {
+  height: 400px;
+  width: 60%;
 }
 
 .carousel-control-prev-icon {
@@ -66,7 +65,7 @@ html, body {
 }
 
 .button {
-  margin: 3% 0; /* Adjust margin based on your design */
+  margin: 4% 0; /* Adjust margin based on your design */
   font-size: 18px; /* Relative font size based on viewport width */
   border: none;
   border-radius: 20px;
@@ -186,7 +185,7 @@ html, body {
   /* location */
   .location {
     height: 250px;
-    width: 60%;
+    width: 100%;
     background-color: #F05924;
     margin: auto;
     margin-top: 50px;
@@ -267,15 +266,88 @@ footer {
 }
 
 
-/* Product Page*/
-
-.p-carousel {
-  background-color: #d1a899;
-  width: 60%;
-  height: 350px;
-  border-radius: 20px;
-  text-align: center;
-  margin: auto;
-  margin-top: 20px;
-  padding-bottom: 5px;
+/* About Page*/
+.banner-about {
+  background-color: #F05924;
+  height: 100px;
+  text-align: left;
+  color: white;
+  padding-left: 20%;
 }
+
+/* Vision and Mission Page */
+.vismis {
+  background-color: #de5b23;
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 50px;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.vismis .statement {
+  text-align: center;
+  font-size: 50px;
+  color: #ffcab7;
+}
+
+/* Features */
+.features {
+  background-color: #ffffff;
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+/* Milestones (optional) */
+.milestones {
+  height: 250px;
+  width: 60%;
+  background-color: #F05924;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+/* Owner */
+.about-owner{
+  background-color: #F05924;
+  height: 100%;
+  text-align: left;
+  color: white;
+  padding-left: 5%;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  text-align: justify;
+}
+
+.about-owner .owner-pic {
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.about-owner .owner-name {
+  margin-top: 20%;
+}
+
+/* Gallery Section */
+.gallery {
+  background-color: #de5b23;
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 50px;
+  text-align: justify;
+  color: #ffffff;
+}
+
+
