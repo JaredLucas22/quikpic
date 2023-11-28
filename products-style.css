@@ -1,5 +1,5 @@
 html, body {
-  background-image: url("bg2.jpg");
+  background-image: url("bg.jpg");
   text-align: center;
   background-size: cover;
   background-attachment: fixed;
@@ -39,58 +39,63 @@ html, body {
   border-radius: 20px;
 }
 
+.product-banner {
+  background-color: #F05924;
+  height: 100px;
+}
 
-.carousel {
-  background-color: #d1a899;
-  width: 100%;
+.product-banner2 {
+  background-color: #f8d811;
+  height: 200px;
+  width: 60%;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+/* Search */
+.product-banner2 {
+  width: 60%;
   height: 100%;
-  border-radius: 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 200px; /* Set a specific height for the container */
   text-align: center;
-  margin: auto;
-  margin-top: 20px;
+  background-color: #f2f2f2; /* Optional background color for demonstration */
 }
 
-.carousel-item {
-  height: 500px;
+.search-wrapper {
+  display: flex;
+  align-items: center; /* Center vertically */
 }
 
-.carousel-item img {
-  height: 500px;
+input[type="text"] {
+  padding: 8px;
+  width: 70%; /* Adjust the input width as needed */
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none; /* Remove default outline */
+  border-radius: 20px 0px 0px 20px;
 }
 
-.custom-img {
-  border-radius: 20px;
+button[type="submit"] {
+  padding: 8px 15px;
+  background-color: #f56632; /* Change to your desired button color */
+  color: white;
+  border: 1px solid #f56632; /* Match button background color */
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none; /* Remove default outline */
+  border-radius: 0px 20px 20px 0px;
 }
 
-.carousel-control-prev-icon {
-  margin-right: 60px;
-}
-
-.carousel-control-next-icon {
-  margin-left: 60px;
-}
-
-.carousel-inner .row {
-  padding-bottom: 100px;
-  margin-bottom: 100px;
-}
-
-.button {
-margin: 3% 0; /* Adjust margin based on your design */
-font-size: 18px; /* Relative font size based on viewport width */
-border: none;
-border-radius: 20px;
-width: 30%; /* Adjust width based on your design */
-height: 8%; /* Adjust height based on your design */
-}
-
-/* Example of a media query for smaller screens */
-@media screen and (max-width: 768px) {
-.button {
-    font-size: 3vw;
-    width: 50%;
-    height: 10%;
-}
+/* Style on hover for button */
+button[type="submit"]:hover {
+  background-color: #f78954; /* Change to hover background color */
+  border-color: #f78954; /* Change to hover border color */
 }
 
 
@@ -276,22 +281,36 @@ margin-top: 20px;
 }
 }
 
-
-/* Product Page*/
+/* Product & Card Page */
 .products-section {
-  background-color: #d1a899;
-  width: 60%;
-  height: 100%;
+  background-color: #d1a89900;
+  width: 60%; /* Adjust the width as needed */
   border-radius: 20px;
   margin: auto;
-  margin-top: 20px;
-  padding-top: 20px;
-}
-
-.products-section h2 {
-  margin: 50px 0px;
+  padding: 0px 0; /* Add padding for spacing */
 }
 
 .bg-custom {
   background-color: white;
+  margin-bottom: 20px; /* Adjust the bottom margin between cards */
+}
+
+.card {
+  border: none; /* Remove default card borders */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.card-body {
+  padding: 8px; /* Adjust padding within the card body */
+}
+
+.card-columns .card {
+  margin-bottom: 18px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .products-section {
+    width: 90%; /* Adjust for smaller screens */
+  }
 }

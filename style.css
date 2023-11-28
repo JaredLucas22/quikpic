@@ -1,5 +1,5 @@
 html, body {
-  background-image: url("bg2.jpg");
+  background-image: url("bg.jpg");
   text-align: center;
   background-size: cover;
   background-attachment: fixed;
@@ -10,6 +10,12 @@ html, body {
     background-color: black;
     padding-left: 20%;
     padding-right: 20%;
+}
+
+.navbar {
+  position: sticky;
+  top: 0; /* Stick the navbar to the top */
+  z-index: 1000; /* Ensure it's above other elements */
 }
 
 .navbar-custom .navbar-nav .nav-link {
@@ -33,48 +39,78 @@ html, body {
     outline: none;
   }
 
+  .banner {
+    height: 400px;
+    width: 100%;
+    background-color: #de5b23;
+  }
+
 .carousel {
-    background-color: #d1a899;
     width: 60%;
     height: 100%;
     border-radius: 20px;
     text-align: center;
     margin: auto;
-    margin-top: 20px;
-    padding-bottom: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+
 }
 
 .carousel-item {
-    padding: 100px;
-    height: 500px;
+    padding: 20px 100px;
+    height: 200%;
+    overflow: hidden; /* Ensure the images don't overflow the carousel item */
 }
 
-.carousel-item .row img {
-  height: 400px;
-  width: 60%;
+.carousel-item img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding transitions */
+  border-radius: 20px;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.1); /* Zoom in the image on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Adding shadow effect */
+}
+
+.carousel-inner h1 {
+  color: white;
+  font-size: 50px;
+  margin: 3% 0%;
 }
 
 .carousel-control-prev-icon {
-    margin-right: 60px;
+    margin-right: 40%;
 }
 
 .carousel-control-next-icon {
-    margin-left: 60px;
-}
-
-.carousel-inner .row {
-    padding-bottom: 100px;
-    margin-bottom: 100px;
+    margin-left: 40%;
 }
 
 .button {
-  margin: 4% 0; /* Adjust margin based on your design */
+  margin: 2% 0; /* Adjust margin based on your design */
   font-size: 18px; /* Relative font size based on viewport width */
-  border: none;
+  border: 2px solid white;
+  background-color: #ef5824;
   border-radius: 20px;
-  width: 30%; /* Adjust width based on your design */
+  width: 20%; /* Adjust width based on your design */
   height: 8%; /* Adjust height based on your design */
+  color: white;
+  transition: all 0.3s ease; /* Adding transition for smooth animation */
 }
+
+.button:hover {
+  transform: scale(1.1); /* Scale the button on hover */
+  background: rgb(248,216,17);
+background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100%);
+  border-color: #ffffff; /* Change border color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.button:focus {
+  outline: none; /* Remove the default focus border */
+}
+
 
 /* Example of a media query for smaller screens */
 @media screen and (max-width: 768px) {
@@ -85,119 +121,144 @@ html, body {
   }
 }
 
+/* Add this CSS to your existing styles */
 
-/* Best-selling products */
-
-.best-selling {
-  width: 80%;
-  max-width: 1200px; /* Set a maximum width */
-  margin: 50px auto; /* Center the section */
-  padding: 20px;
-  border-radius: 20px;
-  background-color: rgb(209, 209, 209);
-  box-sizing: border-box; /* Include padding in width/height calculations */
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .carousel-item {
+    padding: 50px 20px; /* Adjusted padding for smaller screens */
+    height: auto; /* Responsive height for smaller screens */
+  }
+  .carousel-item .row {
+    margin-bottom: 50px; /* Adjusted margin for smaller screens */
+  }
+  .carousel-item .col-lg-4 {
+    padding: 0 5px; /* Adjusted padding for smaller screens */
+  }
+  .carousel-item .row img {
+    margin-bottom: 3%; /* Adjusted margin for smaller screens */
+  }
+  .button {
+    font-size: 4vw; /* Adjusted font size for smaller screens */
+    width: 80%; /* Adjusted width for smaller screens */
+    height: 8%; /* Adjusted height for smaller screens */
+  }
 }
 
+/* Smoothing transition for the carousel */
+.carousel-item {
+  transition: transform 0.6s ease;
+}
+
+
+/* Best-selling products */
+.best-selling {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  border-radius: 20px;
+  background-color: #ef572400;
+  color: white;
+  padding: 20px; /* Added padding for better spacing */
+  box-sizing: border-box;
+}
+
+.best-selling h1 {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-size: 80px;
+}
+
+/* Define animation keyframes */
+@keyframes alternateColors {
+  0%, 100% {
+    color: #ef5824; /* First color */
+    -webkit-text-stroke: .5px #ffffff;
+  }
+  50% {
+    color: #fefefe; /* Second color */
+    -webkit-text-stroke: .5px #ef5824;
+  }
+}
+
+/* Apply animation to the h1 element */
+.best-selling h1 {
+  animation: alternateColors 2s ease-in-out infinite; /* Apply the animation */
+}
+
+/* Ensuring consistency between rows */
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between; /* Distribute items evenly */
   margin-bottom: 20px;
 }
 
 .col-md-6 {
-  flex: 0 0 100%; /* Take full width on small screens */
-  max-width: 100%;
+  flex: 0 0 48%;
+  max-width: 48%;
+  margin-bottom: 20px; /* Create space between rows */
 }
 
-  
-  .product-card {
-    display: flex;
-  }
-
-  .main-image {
-    margin: auto;
-    margin-top: 50px;
-  }
-  
-  .product-details {
-    text-align: justify;
-    margin: 150px 50px; /* Adjust margin as needed */
-  }
-
-  .product-details h2 {
-    margin-top: 100px;
-  }
-  
-  .product-details p {
-    margin: 0px 30px;
-    text-align: justify;
-  }
-
-  .small-images {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .small-images img {
-    width: 40px; 
-    height: 60px;
-    cursor: pointer; 
-    margin: 10px; 
-  }
-  
-.product-card,
-.product-details,
-.main-image,
-.small-images {
-  width: 100%;
-  text-align: center; /* Center content */
+.product-card {
+  display: flex;
+  justify-content: center;
 }
 
-.main-image img {
-  max-width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  margin-top: 20px;
+.main-image {
+  margin: 20px auto; /* Adjusted margin */
 }
 
 .product-details {
-  margin: 20px 0;
+  text-align: justify;
+  margin: 100px 50px;
+}
+
+.product-details h2 {
+  margin-top: 20px; /* Reduced top margin */
+  text-align: center;
+}
+
+.product-details p {
+  margin: 40px 0; /* Adjusted paragraph margin */
+  line-height: 1.9; /* Improved readability */
+}
+
+.small-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Added margin for small images */
 }
 
 .small-images img {
   width: 60px;
   height: 80px;
   margin: 10px;
+  cursor: pointer;
 }
 
 /* Media query for smaller screens */
-@media screen and (min-width: 768px) {
-  .best-selling {
-    width: 90%;
-  }
-
+@media screen and (max-width: 768px) {
   .col-md-6 {
-    flex: 0 0 48%; /* Two columns on larger screens */
-    max-width: 48%;
-    margin: 1%; /* Adjust margin between columns */
+    flex: 0 0 100%; /* Full width on smaller screens */
+    max-width: 100%;
+    margin-bottom: 20px; /* Space between rows */
   }
 }
-
 
   /* location */
   .location {
     height: 250px;
     width: 100%;
-    background-color: #F05924;
+    background-color: #ef5824;
     margin: auto;
     margin-top: 50px;
-    border-radius: 20px;
   }
 
     /* Footer */
 footer {
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
   padding: 20px;
 }
