@@ -33,6 +33,13 @@ html, body {
   outline: none;
 }
 
+.modal-content {
+  background-color: #e9b300;
+  color: white;
+  border-radius: 20px;
+}
+
+
 .carousel {
   background-color: #d1a899;
   width: 100%;
