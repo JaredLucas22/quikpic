@@ -1,7 +1,10 @@
 html, body {
-    background-color: rgb(203, 203, 203);
-    text-align: center;
+  background-image: url("bg2.jpg");
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
 
 .navbar-custom {
     background-color: black;
