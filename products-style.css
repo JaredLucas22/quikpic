@@ -45,19 +45,8 @@ html, body {
   border-radius: 20px;
 }
 
-.product-banner {
-  background-color: #F05924;
-  height: 100px;
-}
 
-.product-banner2 {
-  background-color: #f8d811;
-  height: 200px;
-  width: 60%;
-  margin: auto;
-  margin-top: 5%;  
-  border-radius: 20px;
-}
+
 
 /* Search */
 .product-banner2 {
@@ -71,7 +60,7 @@ html, body {
   align-items: center; /* Center vertically */
   height: 200px; /* Set a specific height for the container */
   text-align: center;
-  background-color: #f2f2f2; /* Optional background color for demonstration */
+  background-color: #f2f2f200; /* Optional background color for demonstration */
 }
 
 .search-wrapper {
@@ -248,17 +237,6 @@ margin: 10px;
 .page-link.active {
   background-color: #ef5824; /* Change to your active color */
 }
-
-
-
-  /* location */
-  .location {
-    height: 250px;
-    width: 100%;
-    background-color: #ef5824;
-    margin: auto;
-    margin-top: 50px;
-  }
 
   /* Footer */
   footer {

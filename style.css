@@ -39,12 +39,6 @@ html, body {
     outline: none;
   }
 
-  .banner {
-    height: 400px;
-    width: 100%;
-    background-color: #de5b23;
-  }
-
 .carousel {
     width: 60%;
     height: 100%;
@@ -247,15 +241,6 @@ background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100
   }
 }
 
-  /* location */
-  .location {
-    height: 250px;
-    width: 100%;
-    background-color: #ef5824;
-    margin: auto;
-    margin-top: 50px;
-  }
-
   
   /* Footer */
   footer {
@@ -340,16 +325,6 @@ background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100
   .footer-column h3 {
     margin-top: 20px; /* Adjust margin */
   }
-}
-
-
-/* About Page*/
-.banner-about {
-  background-color: #F05924;
-  height: 200px;
-  text-align: left;
-  color: white;
-  padding-left: 20%;
 }
 
 /* Vision and Mission Page */
