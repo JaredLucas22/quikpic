@@ -223,6 +223,33 @@ margin: 10px;
 }
 }
 
+/* CSS for Pagination Dots */
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.page-link {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #f8d811;
+  margin: 0 5px;
+  text-align: center;
+  line-height: 15px;
+  color: white;
+  text-decoration: none;
+  border: none;
+ }
+
+.page-link.active {
+  background-color: #ef5824; /* Change to your active color */
+}
+
+
 
   /* location */
   .location {
