@@ -16,6 +16,12 @@ html, body {
   color: white;
 }
 
+.navbar {
+  position: sticky;
+  top: 0; /* Stick the navbar to the top */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
 .navbar-custom .navbar-nav .nav-link.active {
   color: #F05924;
 }
@@ -48,7 +54,8 @@ html, body {
   background-color: #f8d811;
   height: 200px;
   width: 60%;
-  margin: 20px auto;
+  margin: auto;
+  margin-top: 5%;  
   border-radius: 20px;
 }
 
@@ -170,12 +177,21 @@ text-align: center; /* Center content */
 }
 
 /* CSS for image hover effect */
-.card.bg-custom .card-body img:hover {
-  transform: scale(1.1); /* Scale the image on hover */
-  transition: transform 0.3s ease; /* Add a smooth transition */
-  border: 10px solid #F8D811;
-  border-radius: 10px;
+/* CSS for the advanced hover effect */
+.card {
+  overflow: hidden; /* Hide the overflow of the image */
 }
+
+.card img {
+  transition: transform 0.3s ease-in-out; /* Transition effect for image */
+  transform-origin: center center; /* Set the transform origin to the center */
+  border-radius: 20px;
+}
+
+.card img:hover {
+  transform: scale(1.2); /* Slightly increase the scale on hover */
+}
+
 
 
 .main-image img {
@@ -218,95 +234,111 @@ margin: 10px;
   }
 
   /* Footer */
-footer {
-background-color: #000000;
-color: #fff;
-padding: 20px;
-}
-
-.footer-content {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-align-items: flex-start;
-padding: 0px 20px;
-max-width: 1200px;
-margin: 0 auto;
+  footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 5% 20%;
+    width: 100%;
 }
 
 .footer-column {
-flex: 1;
-text-align: left;
-padding: 10px;
-box-sizing: border-box; /* Include padding in width calculation */
-}
-
-.footer-column p {
-margin: 5px 0;
-}
-
-.footer-column img {
-width: 60px;
-height: 60px;
-margin-bottom: 10px;
-}
-
-.footer-column ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
-text-align: left; /* Align text to the left */
-}
-
-.footer-column ul li {
-margin-bottom: 5px;
-}
-
-.footer-column ul li a {
-text-decoration: none;
-color: #fff;
+    margin-bottom: 50px;
 }
 
 .footer-column h3 {
-font-size: 30px;
-margin-bottom: 10px;
-}
-
-.footer-bottom {
-text-align: center;
-margin-top: 20px;
-}
-
-/* Media query for tablet and larger screens */
-@media screen and (min-width: 768px) {
-.footer-column {
-  flex: 1 1 auto; /* Reset flex properties */
-  max-width: none; /* Reset max-width */
-  margin: 0 10px; /* Adjust margin for spacing */
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 .footer-column ul {
-  margin-left: 0; /* Reset margin-left */
+    list-style: none;
+    padding: 0;
 }
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.input-group.mb-3 {
+  border-radius: 20px; /* Applying a border radius of 20px */
+  overflow: hidden; /* Ensuring content doesn't overflow the rounded corners */
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column input[type="email"] {
+    border-radius: 0;
+}
+
+.footer-column .btn-primary {
+  transition: transform 0.3s ease-in-out; /* Change transform property over 0.3 seconds */
+  border-top-left-radius: 0; /* Remove border radius on top-left corner */
+  border-bottom-left-radius: 0; /* Remove border radius on bottom-left corner */
+  border: none;
+  background-color: #ef5824;
+}
+
+.footer-column .btn-primary:hover {
+  background: rgb(248,216,17);
+  background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100%);
+  transform: scale(1.1); /* Scale the button to 1.1 times its original size on hover */ 
+}
+
+
+/* Initial styles remain the same */
+
+/* For larger screens */
+@media (min-width: 768px) {
+  footer {
+    padding: 5% 20%; /* Adjust padding for larger screens */
+  }
+}
+
+/* For smaller screens */
+@media (max-width: 576px) {
+  .footer-content {
+    flex-direction: column; /* Arrange columns vertically for smaller screens */
+  }
+
+  .footer-column {
+    width: 100%; /* Set width to full for smaller screens */
+    text-align: center; /* Center align content */
+    margin-bottom: 30px; /* Adjust margin */
+  }
+
+  .footer-column h3 {
+    margin-top: 20px; /* Adjust margin */
+  }
 }
 
 /* Product & Card Page */
 .products-section {
-  background-color: #d1a89900;
+  background: rgb(239,88,36);
+  background: linear-gradient(253deg, rgba(239,88,36,1) 0%, rgba(248,216,17,1) 59%, rgba(239,88,36,1) 100%);
   width: 60%; /* Adjust the width as needed */
   border-radius: 20px;
-  margin: auto;
-  padding: 0px 0; /* Add padding for spacing */
+  margin: auto; 
+  margin-top: 25px;
+  padding: 20px; /* Add padding for spacing */
 }
 
 .bg-custom {
   background-color: white;
+  box-shadow: #fff;
   margin-bottom: 20px; /* Adjust the bottom margin between cards */
 }
 
 .card {
   border: none; /* Remove default card borders */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.769);  /* Add a subtle shadow */
+  border-radius: 20px;
 }
 
 .card-body {
