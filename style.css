@@ -370,19 +370,17 @@ footer {
   text-align: center;
 }
 
-/* Milestones (optional) */
-.milestones {
-  height: 250px;
-  width: 60%;
-  background-color: #F05924;
-  margin: auto;
-  margin-top: 50px;
-  border-radius: 20px;
+/* Gallery */
+.gallery .col-md-4 img {
+  /* Adjusting the border for the images */
+  border: 3px solid #ccc; /* Same border style as above */
 }
+
 
 /* Owner */
 .about-owner{
-  background-color: #F05924;
+  background: rgb(248,216,17);
+  background: linear-gradient(90deg, rgba(248,216,17,1) 17%, rgba(239,88,36,1) 68%);
   height: 100%;
   text-align: left;
   color: white;
@@ -403,7 +401,7 @@ footer {
 
 /* Gallery Section */
 .gallery {
-  background-color: #de5b23;
+  background-color: #de5b2300;
   height: 100%;
   width: 60%;
   margin: auto;
@@ -414,4 +412,12 @@ footer {
   color: #ffffff;
 }
 
+.gallery h1 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+}
 
+.mb-4 {
+  margin-bottom:  1rem!important;
+}
