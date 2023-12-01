@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Contact Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form action="https://www.freecontactform.com/email_form.php" method="post">
+<input type="hidden" name="submission_type" value="contact" />
+<input type="hidden" name="recipient" value="jjclucas.student@ua.edu.ph" />
+<input type="hidden" name="cf_form_name" value="Contact Form" />
+<input type="hidden" name="user_captcha" value="" /> <label for="name">Name:</label><br /> 
+<input type="text" id="name" name="name" required><br /> <label for="email">Email:</label><br /> 
+<input type="email" id="email" name="email" required><br /> <label for="subject">Subject:</label><br /> 
+<input type="text" id="subject" name="subject" required><br /> <label for="message">Message:</label><br /> 
+<textarea id="message" name="message" required></textarea><br /> 
+<input type="submit" value="Submit" onclick="btnFunction()"> 
+</form> 
+
+<script>
+    function btnFunction() {
+    // Checking the values of name, email, subject, and message fields.
+    if(document.getElementById('name').value && document.getElementById('email').value && document.getElementById('subject').value && document.getElementById('message').value) {
+        // Displaying a confirmation message
+        alert("Form Submitted Successfully");
+
+        // Now sending the email
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "your_email@gmail.com",
+            To: 'jjclucas.student@ua.edu.ph',
+            From: document.getElementById('email').value,
+            Subject: document.getElementById('subject').value,
+            Body: document.getElementById('message').value
+        }).then(function (message) {
+            alert("Email sent successfully");
+        });
+    } else {
+        // Displaying an error message
+        alert("Please fill in all fields");
+    }
+}
+</script>
+
+</body> 
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+</html>
