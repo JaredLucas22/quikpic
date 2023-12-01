@@ -472,3 +472,57 @@ background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100
 .mb-4 {
   margin-bottom:  1rem!important;
 }
+
+/*contact page*/
+form {
+  background: rgb(248,216,17);
+  background: linear-gradient(180deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100%);
+  width: 25%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  padding-top: 50px;
+}
+
+/* Style for form inputs */
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+ border-radius: 20px; /* Set border radius */
+ padding: 10px; /* Set padding */
+ margin-bottom: 25px; /* Add margin between inputs */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+ width: 80%; /* Make text and email inputs and textarea full width */
+ border: none;
+}
+
+input[type="submit"] {
+ background-color: #ef5824; /* Set button background color */
+ color: white; /* Set button text color */
+ border: none; /* Remove default button border */
+ cursor: pointer; /* Add cursor pointer on hover */
+ transition: all 0.3s ease; /* Adding transition for smooth animation */
+ border: 2px solid white;
+ width: 30%;
+font-size: 0.8vw; /* Adjust font size based on viewport width */
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.1); /* Scale the button on hover */
+  background: linear-gradient(253deg, rgba(248, 216, 17, 1) 0%, rgba(239, 88, 36, 1) 100%);
+  border-color: #ffffff; /* Change border color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
