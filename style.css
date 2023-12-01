@@ -60,6 +60,7 @@ html, body {
 .carousel-item img {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding transitions */
   border-radius: 20px;
+  margin-bottom: 10%; /* fallback style if vh units are not supported */
 }
 
 .carousel-item img:hover {
@@ -83,12 +84,13 @@ html, body {
 
 .button {
   margin: 2% 0; /* Adjust margin based on your design */
-  font-size: 18px; /* Relative font size based on viewport width */
+  font-size: 100%; /* Relative font size based on viewport width */
   border: 2px solid white;
   background-color: #ef5824;
   border-radius: 20px;
-  width: 20%; /* Adjust width based on your design */
-  height: 8%; /* Adjust height based on your design */
+  padding: 5px;
+  width: 25%; /* Adjust width based on your design */
+  height: 5%; /* Adjust height based on your design */
   color: white;
   transition: all 0.3s ease; /* Adding transition for smooth animation */
 }
@@ -106,43 +108,6 @@ background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100
 }
 
 
-/* Example of a media query for smaller screens */
-@media screen and (max-width: 768px) {
-  .button {
-      font-size: 3vw;
-      width: 50%;
-      height: 10%;
-  }
-}
-
-/* Add this CSS to your existing styles */
-
-/* Adjustments for smaller screens */
-@media screen and (max-width: 768px) {
-  .carousel-item {
-    padding: 50px 20px; /* Adjusted padding for smaller screens */
-    height: auto; /* Responsive height for smaller screens */
-  }
-  .carousel-item .row {
-    margin-bottom: 50px; /* Adjusted margin for smaller screens */
-  }
-  .carousel-item .col-lg-4 {
-    padding: 0 5px; /* Adjusted padding for smaller screens */
-  }
-  .carousel-item .row img {
-    margin-bottom: 3%; /* Adjusted margin for smaller screens */
-  }
-  .button {
-    font-size: 4vw; /* Adjusted font size for smaller screens */
-    width: 80%; /* Adjusted width for smaller screens */
-    height: 8%; /* Adjusted height for smaller screens */
-  }
-}
-
-/* Smoothing transition for the carousel */
-.carousel-item {
-  transition: transform 0.6s ease;
-}
 
 
 /* Best-selling products */
@@ -254,7 +219,48 @@ background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100
   }
 }
 
-  
+
+/* Location */
+.location {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.image-container .btn {
+  position: absolute;
+  top: 75%;
+  left: 53.5%;
+  transform: translate(-50%, -50%);
+  font-size: 0.7vw; /* Adjust font size based on viewport width */
+  border: 3px solid white;
+  background-color: #ef5824;
+  border-radius: 30px; 
+  height: auto;
+  padding: 10px 20px; /* Adjust padding based on your design */
+  color: white;
+  transition: all 0.3s ease; /* Adding transition for smooth animation */
+}
+
+.image-container .btn:hover {
+  transform: translate(-50%, -50%) scale(1.1); /* Scale the button on hover */
+  background: linear-gradient(253deg, rgba(248, 216, 17, 1) 0%, rgba(239, 88, 36, 1) 100%);
+  border-color: #ffffff; /* Change border color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.image-container .btn:focus {
+  outline: none; /* Remove the default focus border */
+}
+
   /* Footer */
   footer {
     background-color: #000000;
@@ -296,7 +302,7 @@ background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100
 }
 
 .footer-column input[type="email"] {
-    border-radius: 0;
+    height: 100%;
 }
 
 .footer-column .btn-primary {
@@ -305,13 +311,57 @@ background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100
   border-bottom-left-radius: 0; /* Remove border radius on bottom-left corner */
   border: none;
   background-color: #ef5824;
+  height: 40%;
 }
 
 .footer-column .btn-primary:hover {
   background: rgb(248,216,17);
   background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100%);
   transform: scale(1.1); /* Scale the button to 1.1 times its original size on hover */
- 
+}
+
+
+/* Responsive font sizes for footer content */
+.footer-content p,
+.footer-content h2,
+.footer-content h3,
+.footer-content ul,
+.footer-content li,
+.footer-bottom p {
+  font-size: 1vw; /* Adjust base font size based on viewport width */
+}
+
+.footer-content h2,
+.footer-content h3 {
+  font-size: 1.5vw; /* Adjust base font size based on viewport width */
+}
+
+/* Responsive styles for input and button */
+.input-group input[type="email"],
+.input-group .btn {
+  font-size: 1vw; /* Adjust font size based on viewport width */
+  padding: 8px 15px; /* Adjust padding based on your design */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .input-group input[type="email"],
+  .input-group .btn {
+    font-size: 2vw; /* Adjusted font size for smaller screens */
+    padding: 6px 12px; /* Adjusted padding for smaller screens */
+  }
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .footer-content p,
+  .footer-content h2,
+  .footer-content h3,
+  .footer-content ul,
+  .footer-content li,
+  .footer-bottom p {
+    font-size: 2vw; /* Adjusted font size for smaller screens */
+  }
 }
 
 /* Initial styles remain the same */

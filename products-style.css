@@ -39,19 +39,65 @@ html, body {
   outline: none;
 }
 
+/*modal*/
+
 .modal-content {
-  background-color: #e9b300;
+  background: rgb(248,216,17);
+  background: linear-gradient(180deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100%);
   color: white;
   border-radius: 20px;
 }
 
+.modal-body ul {
+  margin-top: 20px;
+}
 
+.modal-body ul li {
+  text-align: left;
+  margin: 5px;
+}
+
+body.modal-open {
+  overflow: visible;
+  padding-right: 0 !important;
+}
+
+.modal-footer .btn {
+  transition: transform 0.3s ease-in-out; /* Change transform property over 0.3 seconds */
+  border-radius: 20px;
+  border: 2px solid white;
+  background-color: #ef5824;
+}
+
+.modal-footer .btn:hover {
+background: rgb(248,216,17);
+background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100%);
+transform: scale(1.1); /* Scale the button to 1.1 times its original size on hover */
+}
+
+.promotion-section .card-body img {
+  cursor: pointer;
+}
+
+.modal-header h5 {
+  color: #ef5824;
+  font-size: 2.5vh; 
+  font-weight: 600;
+}
+
+/* Promos */
+.container.text-center {
+  width: 100%;
+}
 
 
 /* Search */
 .product-banner2 {
   width: 60%;
   height: 100%;
+  text-align: center;
+  margin: auto;
+  margin-top: 1%;
 }
 
 .search-container {
@@ -69,12 +115,13 @@ html, body {
 }
 
 input[type="text"] {
-  padding: 8px;
-  width: 70%; /* Adjust the input width as needed */
+  padding: 3%;
+  width: 100%; /* Adjust the input width as needed */
   border: 1px solid #ccc;
   border-radius: 4px 0 0 4px;
   outline: none; /* Remove default outline */
   border-radius: 20px 0px 0px 20px;
+  font-size: 100%;
 }
 
 button[type="submit"] {
@@ -86,12 +133,14 @@ button[type="submit"] {
   cursor: pointer;
   outline: none; /* Remove default outline */
   border-radius: 0px 20px 20px 0px;
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Style on hover for button */
 button[type="submit"]:hover {
-  background-color: #f78954; /* Change to hover background color */
-  border-color: #f78954; /* Change to hover border color */
+  background: rgb(248,216,17);
+  background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100%);
+  transform: scale(1.0); /* Scale the button to 1.1 times its original size on hover */
 }
 
 
@@ -217,19 +266,21 @@ margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1%;
+  margin-bottom: 8%;
 }
 
 .page-link {
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
+  width: 1%;
+  height: 1%;
+  border-radius: 100%;
   background-color: #f8d811;
   margin: 0 5px;
   text-align: center;
   line-height: 15px;
   color: white;
+  cursor: pointer;
   text-decoration: none;
   border: none;
  }
@@ -237,6 +288,7 @@ margin: 10px;
 .page-link.active {
   background-color: #ef5824; /* Change to your active color */
 }
+
 
   /* Footer */
   footer {
@@ -288,14 +340,58 @@ margin: 10px;
   border-bottom-left-radius: 0; /* Remove border radius on bottom-left corner */
   border: none;
   background-color: #ef5824;
+  height: 40%;
 }
 
 .footer-column .btn-primary:hover {
   background: rgb(248,216,17);
   background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100%);
-  transform: scale(1.1); /* Scale the button to 1.1 times its original size on hover */ 
+  transform: scale(1.1); /* Scale the button to 1.1 times its original size on hover */
 }
 
+
+/* Responsive font sizes for footer content */
+.footer-content p,
+.footer-content h2,
+.footer-content h3,
+.footer-content ul,
+.footer-content li,
+.footer-bottom p {
+  font-size: 1vw; /* Adjust base font size based on viewport width */
+}
+
+.footer-content h2,
+.footer-content h3 {
+  font-size: 1.5vw; /* Adjust base font size based on viewport width */
+}
+
+/* Responsive styles for input and button */
+.input-group input[type="email"],
+.input-group .btn {
+  font-size: 1vw; /* Adjust font size based on viewport width */
+  padding: 8px 15px; /* Adjust padding based on your design */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .input-group input[type="email"],
+  .input-group .btn {
+    font-size: 2vw; /* Adjusted font size for smaller screens */
+    padding: 6px 12px; /* Adjusted padding for smaller screens */
+  }
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .footer-content p,
+  .footer-content h2,
+  .footer-content h3,
+  .footer-content ul,
+  .footer-content li,
+  .footer-bottom p {
+    font-size: 2vw; /* Adjusted font size for smaller screens */
+  }
+}
 
 /* Initial styles remain the same */
 
@@ -323,6 +419,52 @@ margin: 10px;
   }
 }
 
+/* Location */
+.location {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.image-container .btn {
+  position: absolute;
+  top: 75%;
+  left: 53.5%;
+  transform: translate(-50%, -50%);
+  font-size: 0.7vw; /* Adjust font size based on viewport width */
+  border: 3px solid white;
+  background-color: #ef5824;
+  border-radius: 30px; 
+  height: auto;
+  padding: 10px 20px; /* Adjust padding based on your design */
+  color: white;
+  transition: all 0.3s ease; /* Adding transition for smooth animation */
+}
+
+.image-container .btn:hover {
+  transform: translate(-50%, -50%) scale(1.1); /* Scale the button on hover */
+  background: linear-gradient(253deg, rgba(248, 216, 17, 1) 0%, rgba(239, 88, 36, 1) 100%);
+  border-color: #ffffff; /* Change border color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.image-container .btn:focus {
+  outline: none; /* Remove the default focus border */
+}
+
+/* Promotions */
+.promotion-section {
+  margin: 10% 0%;
+}
+
 /* Product & Card Page */
 .products-section {
   background: rgb(239,88,36);
@@ -330,7 +472,6 @@ margin: 10px;
   width: 60%; /* Adjust the width as needed */
   border-radius: 20px;
   margin: auto; 
-  margin-top: 25px;
   padding: 20px; /* Add padding for spacing */
 }
 
