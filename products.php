@@ -36,9 +36,6 @@
         <li class="nav-item">
           <a class="nav-link" href="owner.html">Owner</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
       </ul>
     </div>
   </nav>
@@ -172,46 +169,12 @@
 
 <!-- Location -->
 <div class="location">
-  <div class="image-container">
-     <img src="Graphics/We're nearby..png" alt="Location Image">
-     <a href="location.html"><button class="btn">Find our Quick Pick Stores</button></a>
-  </div>
- </div>
+  <img src="Graphics/We're nearby..png" alt="" width="100%">
+</div>
 
-<!-- Footer -->
-<footer>
-  <div class="footer-content row">
-    <div class="footer-column col-md-4">
-      <img src="logo.png" width="60" height="60" alt="Company Logo">
-      <p>Analyn & Bong's Apartment, Mercury Street, Barangay Santo Nino, San Fernando Subdivision, City of San Fernando, Pampanga</p>
-    </div>
-     
-     <div class="footer-column col-md-4">
-       <h3>Contact Us</h3>
-       <ul>
-         <li><i class="bi bi-telephone"></i>&nbsp;&nbsp; 0966 948 7089</li>
-         <li><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i>&nbsp;&nbsp;Facebook Page</a></li>
-       </ul>
-     </div>
-     
-     <div class="footer-column col-md-4">
-       <div class="container">
-         <h2>New to Quick Pick?</h2>
-         <p>Sign up for emails to get the latest updates</p>
-         
-         <div class="input-group mb-3">
-           <input type="email" class="form-control" placeholder="Enter email address" aria-label="Enter email address" aria-describedby="basic-addon2">
-           <button class="btn btn-primary" type="button">Subscribe</button>
-         </div>
-       </div>
-     </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy; 2023 Quick Pick All Rights Reserved.</p>
-  </div>
-</footer>
-
+<?php 
+include("footer.php");
+?>
 <script>
 function showPage(pageNumber) {
   // Hide all pages

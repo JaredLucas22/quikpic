@@ -37,48 +37,21 @@
         <li class="nav-item">
           <a class="nav-link" href="owner.html">Owner</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
       </ul>
     </div>
   </nav>
 
 
   <!-- Fixed Banner-->
-  <div class="product-banner"> 
+  <div class="container text-center">
     <img src="Graphics/Promo.png" width="100%" alt="">
   </div>
 
   <!-- Products Section -->
-  <div class="promotion-section">
+  <div class="products-section">
     <div class="container">
       <h2>What's New</h2>
       <div class="card-columns">
-        <div class="card bg-custom">
-          <div class="card-body text-center">
-            <!-- Add data-toggle and data-target attributes for modal -->
-            <p class="card-text" data-toggle="modal" data-target="#promoModal1">
-              <img src="promo1.png" width="100%" height="100%" alt="Promo 1">
-            </p>
-          </div>
-        </div>
-        <div class="card bg-custom">
-          <div class="card-body text-center">
-            <!-- Add data-toggle and data-target attributes for modal -->
-            <p class="card-text" data-toggle="modal" data-target="#promoModal2">
-              <img src="promo2.png" width="100%" height="100%" alt="Promo 3">
-            </p>
-          </div>
-        </div>
-        <div class="card bg-custom">
-          <div class="card-body text-center">
-            <!-- Add data-toggle and data-target attributes for modal -->
-            <p class="card-text" data-toggle="modal" data-target="#promoModal3">
-              <img src="promo3.png" width="100%" height="100%" alt="Promo 3">
-            </p>
-          </div>
-        </div>
         <div class="card bg-custom">
           <div class="card-body text-center">
             <!-- Add data-toggle and data-target attributes for modal -->
@@ -113,7 +86,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="promoModalLabel1">Promo Description</h5>
+          <h5 class="modal-title" id="promoModalLabel1">Product Description</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -121,6 +94,7 @@
         <div class="modal-body">
           <!-- Add your description content here -->
           <img src="promo1.png" alt="">
+          <p><b>Description for Promo 1 goes here.</b></p>
           <ul>
             <li>"Buy One Get One Free on all Ice Cream Cones!" </li>
             <li>"20% off on Double Scoop Ice Cream Sundaes!" </li>
@@ -176,46 +150,12 @@
 
 <!-- Location -->
 <div class="location">
-  <div class="image-container">
-     <img src="Graphics/We're nearby..png" alt="Location Image">
-     <a href="location.html"><button class="btn">Find our Quick Pick Stores</button></a>
-  </div>
- </div>
+  <img src="Graphics/We're nearby..png" alt="" width="100%">
+</div>
 
-<!-- Footer -->
-<footer>
-  <div class="footer-content row">
-    <div class="footer-column col-md-4">
-      <img src="logo.png" width="60" height="60" alt="Company Logo">
-      <p>Analyn & Bong's Apartment, Mercury Street, Barangay Santo Nino, San Fernando Subdivision, City of San Fernando, Pampanga</p>
-    </div>
-     
-     <div class="footer-column col-md-4">
-       <h3>Contact Us</h3>
-       <ul>
-         <li><i class="bi bi-telephone"></i>&nbsp;&nbsp; 0966 948 7089</li>
-         <li><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i>&nbsp;&nbsp;Facebook Page</a></li>
-       </ul>
-     </div>
-     
-     <div class="footer-column col-md-4">
-       <div class="container">
-         <h2>New to Quick Pick?</h2>
-         <p>Sign up for emails to get the latest updates</p>
-         
-         <div class="input-group mb-3">
-           <input type="email" class="form-control" placeholder="Enter email address" aria-label="Enter email address" aria-describedby="basic-addon2">
-           <button class="btn btn-primary" type="button">Subscribe</button>
-         </div>
-       </div>
-     </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy; 2023 Quick Pick All Rights Reserved.</p>
-  </div>
-</footer>
-
+<?php 
+include("footer.php");
+?>
 
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
