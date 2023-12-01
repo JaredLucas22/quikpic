@@ -267,10 +267,11 @@ background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100
     color: #fff;
     padding: 5% 20%;
     width: 100%;
+    height: 60%;
 }
 
 .footer-column {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .footer-column h3 {
@@ -479,8 +480,8 @@ form {
   background: linear-gradient(180deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100%);
   width: 25%;
   margin: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   border-radius: 20px;
   padding-top: 50px;
 }
@@ -525,4 +526,24 @@ input[type="submit"]:hover {
   background: linear-gradient(253deg, rgba(248, 216, 17, 1) 0%, rgba(239, 88, 36, 1) 100%);
   border-color: #ffffff; /* Change border color on hover */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.cont-container h1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+@keyframes changeColor {
+  0%, 100% {
+      color: #ef5824; 
+      
+  }
+  50% {
+      color: #ffffff ; /* Alternate color */
+  }
+}
+
+.color-change {
+  animation: changeColor 4s infinite; /* Adjust timing as needed */
 }
