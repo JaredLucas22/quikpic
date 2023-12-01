@@ -18,8 +18,8 @@ html, body {
 
 .navbar {
   position: sticky;
-  top: 0; /* Stick the navbar to the top */
-  z-index: 1000; /* Ensure it's above other elements */
+  top: 0; 
+  z-index: 1000; 
 }
 
 .navbar-custom .navbar-nav .nav-link.active {
@@ -31,7 +31,7 @@ html, body {
 }
 
 .navbar-toggler {
-  background-color: rgb(0, 0, 0); /* Change the background color to your desired color */
+  background-color: rgb(0, 0, 0); 
   border: none;
 }
 
@@ -40,7 +40,6 @@ html, body {
 }
 
 /*modal*/
-
 .modal-content {
   background: rgb(248,216,17);
   background: linear-gradient(180deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100%);
@@ -63,7 +62,7 @@ body.modal-open {
 }
 
 .modal-footer .btn {
-  transition: transform 0.3s ease-in-out; /* Change transform property over 0.3 seconds */
+  transition: transform 0.3s ease-in-out; 
   border-radius: 20px;
   border: 2px solid white;
   background-color: #ef5824;
