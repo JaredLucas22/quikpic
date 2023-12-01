@@ -373,8 +373,7 @@ background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100
 
 /* Vision and Mission Page */
 .vismis {
-  height: 100%;
-  width: 60%;
+  width: 60%; /* Adjust the width as needed for responsiveness */
   margin: auto;
   border-radius: 20px;
   margin-top: 50px;
@@ -384,10 +383,11 @@ background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100
 
 .vismis .statement {
   text-align: center;
-  font-size: 60px;
+  font-size: 3rem; /* Adjust font size for responsiveness */
   color: #ffffff;
   margin: 40px 0px;
 }
+
 
 /* Gallery */
 .gallery .col-md-4 {
@@ -495,14 +495,14 @@ background: linear-gradient(253deg, rgba(248,216,17,1) 0%, rgba(239,88,36,1) 100
 
 .features {
   background-color: #ef5824;
-  height: 100%;
-  width: 60%;
+  width: 60%; /* Adjust the width as needed for responsiveness */
   margin: auto;
   border-radius: 20px;
   margin-top: 3%;
   margin-bottom: 10%;
   text-align: center;
   color: white;
+  padding: 30px; /* Adjust padding for responsiveness */
 }
 
 h2.custom-heading {
@@ -516,18 +516,44 @@ h2.custom-heading {
 }
 
 .features p {
-  margin-top: 30px;
-  line-height: 30px;
+  margin-top: 20px;
+  line-height: 1.5; /* Adjust line height for responsiveness */
 }
 
 .features h4 {
   margin-top: 10px;
-  font-size: 30px;
+  font-size: 1.5rem; /* Adjust font size for responsiveness */
 }
 
 .owner-div {
   margin: 0;
   padding: 0;
- }
+}
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .vismis,
+  .features {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .vismis .statement {
+    font-size: 2rem;
+    margin: 20px 0px;
+  }
+
+  h2.custom-heading {
+    font-size: 2.5rem;
+  }
+
+  .features p {
+    margin-top: 15px;
+  }
+
+  .features h4 {
+    font-size: 1.2rem;
+  }
+}
 
