@@ -14,14 +14,12 @@
 
 <!-- Footer -->
 <footer>
- <div class="footer-content row">
+  <div class="footer-content row">
      <div class="footer-column col-md-4">
        <img src="logo.png" width="60" height="60" alt="Company Logo">
-       <p>Analyn & Bong's Apartment, Mercury Street,</p>
-       <p>Barangay Santo Nino, San Fernando Subdivision,</p>
-       <p>City of San Fernando, Pampanga</p>
+       <p>Analyn & Bong's Apartment, Mercury Street, Barangay Santo Nino, San Fernando Subdivision, City of San Fernando, Pampanga</p>
      </div>
-    
+     
      <div class="footer-column col-md-4">
        <h3>Contact Us</h3>
        <ul>
@@ -29,23 +27,23 @@
          <li><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i>&nbsp;&nbsp;Facebook Page</a></li>
        </ul>
      </div>
-    
+     
      <div class="footer-column col-md-4">
        <div class="container">
          <h2>New to Quick Pick?</h2>
          <p>Sign up for emails to get the latest updates</p>
-        
+         
          <div class="input-group mb-3">
-           <input type="email" id="email"class="form-control" placeholder="Enter email address" aria-label="Enter email address" aria-describedby="basic-addon2">
-<button class="btn btn-primary" value="submit" type="button" onclick="btnFunction()">Subscribe</button>
+           <input type="email" class="form-control" placeholder="Enter email address" aria-label="Enter email address" aria-describedby="basic-addon2">
+           <button class="btn btn-primary" type="button">Subscribe</button>
          </div>
        </div>
      </div>
- </div>
+  </div>
 
- <div class="footer-bottom">
+  <div class="footer-bottom">
     <p>&copy; 2023 Quick Pick All Rights Reserved.</p>
- </div>
+  </div>
 </footer>
 
 <script>
