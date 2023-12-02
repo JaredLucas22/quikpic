@@ -15,7 +15,7 @@
   <link rel="icon" href="logo.ico" type="image/x-icon">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
     <a class="navbar-brand" href="#">
       <img src="logo.png" width="50" height="50" class="d-inline-block align-top" alt="Logo">
     </a>
@@ -26,23 +26,27 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="home.html">Home</a>
+          <a class="nav-link" href="home.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="products.html">Products</a>
+          <a class="nav-link" href="products.php">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="promotions.html">Promos</a>
+          <a class="nav-link" href="promotions.php">Promos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="about.php">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="owner.html">Owner</a>
+          <a class="nav-link active" href="owner.php">Owner</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.php">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
+
 
 <!-- Owner Section-->
 <div class="about-owner"> 

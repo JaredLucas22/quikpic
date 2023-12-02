@@ -22,19 +22,22 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="home.html">Home</a>
+          <a class="nav-link" href="home.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="products.html">Products</a>
+          <a class="nav-link active" href="products.php">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="promotions.html">Promos</a>
+          <a class="nav-link" href="promotions.php">Promos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="about.php">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="owner.html">Owner</a>
+          <a class="nav-link" href="owner.php">Owner</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.php">Contact</a>
         </li>
       </ul>
     </div>
@@ -169,23 +172,23 @@
 
 <!-- Location -->
 <div class="location">
-  <img src="Graphics/We're nearby..png" alt="" width="100%">
-</div>
+  <div class="image-container">
+     <img src="Graphics/We're nearby..png" alt="Location Image">
+     <a href="location.php"><button class="btn">Find our Quick Pick Stores</button></a>
+  </div>
+ </div>
 
+<!-- Footer -->
 <?php 
 include("footer.php");
 ?>
-<script>
+
+  <script>
 function showPage(pageNumber) {
-  // Hide all pages
   document.querySelectorAll('.card-columns').forEach(page => {
     page.style.display = 'none';
   });
-
-  // Show the selected page
   document.getElementById(`page${pageNumber}`).style.display = 'block';
-
-  // Update active link
   document.querySelectorAll('.page-link').forEach(link => {
     link.classList.remove('active');
   });
@@ -193,36 +196,29 @@ function showPage(pageNumber) {
 }
 
 function fadeIn(element) {
-  let op = 0; // initial opacity
+  let op = 0; 
   element.style.opacity = 0;
   const timer = setInterval(function () {
     if (op >= 1) {
       clearInterval(timer);
     }
     element.style.opacity = op;
-    op += 0.01; // Adjust the opacity increment for a slower appearance
-  }, 10); // Adjust the interval for a smoother animation
+    op += 0.01; 
+  }, 10);
 }
 
 function showPage(pageNumber) {
-  // Hide all pages
   document.querySelectorAll('.card-columns').forEach(page => {
     page.style.display = 'none';
   });
-
-  // Show the selected page with a fade-in effect
   const selectedPage = document.getElementById(`page${pageNumber}`);
   selectedPage.style.display = 'block';
-  fadeIn(selectedPage); // Apply fade-in effect
-
-  // Update active link
+  fadeIn(selectedPage); 
   document.querySelectorAll('.page-link').forEach(link => {
     link.classList.remove('active');
   });
   document.querySelector(`.page-link:nth-child(${pageNumber})`).classList.add('active');
 }
-
-
 </script>
 
 <!-- JavaScript -->

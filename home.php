@@ -22,24 +22,26 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link active" href="home.html">Home</a>
+        <a class="nav-link active" href="home.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="products.php">Products</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="promotions.html">Promos</a>
+        <a class="nav-link" href="promotions.php">Promos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="about.php">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="owner.html">Owner</a>
+        <a class="nav-link" href="owner.php">Owner</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.php">Contact</a>
       </li>
     </ul>
   </div>
 </nav>
-
 <!-- Fixed Banner-->
 <div class="banner"> 
   <img src="Graphics/Jumbotron.png" alt="" width="100%"">
@@ -51,13 +53,13 @@
     <div class="carousel-item active">
       <div class="row">
         <div class="col-lg-4">
-          <a href="promotions.html"><img src="promo3.png" class="d-block w-100 custom-img" alt="First slide"></a>
+          <a href="promotions.php"><img src="promo3.png" class="d-block w-100 custom-img" alt="First slide"></a>
         </div>
         <div class="col-lg-4">
-          <a href="promotions.html"><img src="promo3.png" class="d-block w-100 custom-img" alt="Second slide"></a>
+          <a href="promotions.php"><img src="promo3.png" class="d-block w-100 custom-img" alt="Second slide"></a>
         </div>
         <div class="col-lg-4">
-          <a href="promotions.html"><img src="promo3.png" class="d-block w-100 custom-img" alt="Third slide"></a>
+          <a href="promotions.php"><img src="promo3.png" class="d-block w-100 custom-img" alt="Third slide"></a>
         </div>
       </div>
     </div>
@@ -65,13 +67,13 @@
     <div class="carousel-item">
       <div class="row">
         <div class="col-lg-4">
-          <a href="promotions.html"><img src="promo1.png" class="d-block w-100 custom-img" alt="Fourth slide"></a>
+          <a href="promotions.php"><img src="promo1.png" class="d-block w-100 custom-img" alt="Fourth slide"></a>
         </div>
         <div class="col-lg-4">
-          <a href="promotions.html"><img src="promo2.png" class="d-block w-100 custom-img" alt="Fifth slide"></a>
+          <a href="promotions.php"><img src="promo2.png" class="d-block w-100 custom-img" alt="Fifth slide"></a>
         </div>
         <div class="col-lg-4">
-          <a href="promotions.html"><img src="promo3.png" class="d-block w-100 custom-img" alt="Sixth slide"></a>
+          <a href="promotions.php"><img src="promo3.png" class="d-block w-100 custom-img" alt="Sixth slide"></a>
         </div>
       </div>
     </div>
@@ -84,7 +86,7 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-  <a href="promotions.html"><button class="button"> See more promos </button></a>
+  <a href="promotions.php"><button class="button"> See more promos </button></a>
 </div>
 
 
