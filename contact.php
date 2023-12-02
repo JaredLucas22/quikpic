@@ -71,12 +71,12 @@
                 var subject = document.getElementById('subject').value;
                 var message = document.getElementById('message').value;
                 Email.send({
-        SecureToken:  "c32f4d27-1985-42e5-a501-97fc5a3d8d94",
+        SecureToken:  "a5c3fcfe-a1b6-493e-9de5-06fc2586ef9f",
         Host : "smtp.elasticemail.com",
-        Username : "jjclucas.student@ua.edu.ph",
-        Password : "2A5E62567D00C93DC8BCA9548E8CB20C5A84",
-        To : 'nutjabhd@gmail.com',
-        From: 'jjclucas.student@ua.edu.ph',
+        Username : "quickpic38@gmail.com",
+        Password : "E718FE409BB81367C0A1CC58277CB96CC194",
+        To : 'jjclucas.student@ua.edu.ph',
+        From: 'quickpic38@gmail.com',
         Subject : "Contact Service",
         Body : 'Name: '+name+ '<br/> Email: ' +email+ '<br/>Subject: '+subject+ '<br/>Message: ' + message
     }).then(

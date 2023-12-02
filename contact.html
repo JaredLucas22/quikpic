@@ -15,7 +15,7 @@
   <link rel="icon" href="logo.ico" type="image/x-icon">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
     <a class="navbar-brand" href="#">
       <img src="logo.png" width="50" height="50" class="d-inline-block align-top" alt="Logo">
     </a>
@@ -26,22 +26,22 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="home.html">Home</a>
+          <a class="nav-link" href="home.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="products.html">Products</a>
+          <a class="nav-link" href="products.php">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="promotions.html">Promos</a>
+          <a class="nav-link" href="promotions.php">Promos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="about.php">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="owner.html">Owner</a>
+          <a class="nav-link" href="owner.php">Owner</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" href="contact.html">Contact</a>
+            <a class="nav-link active" href="contact.php">Contact</a>
           </li>
       </ul>
     </div>
@@ -71,12 +71,12 @@
                 var subject = document.getElementById('subject').value;
                 var message = document.getElementById('message').value;
                 Email.send({
-        SecureToken:  "c32f4d27-1985-42e5-a501-97fc5a3d8d94",
+        SecureToken:  "a5c3fcfe-a1b6-493e-9de5-06fc2586ef9f",
         Host : "smtp.elasticemail.com",
-        Username : "jjclucas.student@ua.edu.ph",
-        Password : "2A5E62567D00C93DC8BCA9548E8CB20C5A84",
-        To : 'nutjabhd@gmail.com',
-        From: 'jjclucas.student@ua.edu.ph',
+        Username : "quickpic38@gmail.com",
+        Password : "E718FE409BB81367C0A1CC58277CB96CC194",
+        To : 'jjclucas.student@ua.edu.ph',
+        From: 'quickpic38@gmail.com',
         Subject : "Contact Service",
         Body : 'Name: '+name+ '<br/> Email: ' +email+ '<br/>Subject: '+subject+ '<br/>Message: ' + message
     }).then(
@@ -94,43 +94,11 @@
 <div class="location">
   <div class="image-container">
      <img src="Graphics/We're nearby..png" alt="Location Image">
-     <a href="location.html"><button class="btn">Find our Quick Pick Stores</button></a>
+     <a href="location.php"><button class="btn">Find our Quick Pick Stores</button></a>
   </div>
  </div>
 
-<!-- Footer -->
-<footer>
-  <div class="footer-content row">
-    <div class="footer-column col-md-4">
-      <img src="logo.png" width="60" height="60" alt="Company Logo">
-      <p>Analyn & Bong's Apartment, Mercury Street, Barangay Santo Nino, San Fernando Subdivision, City of San Fernando, Pampanga</p>
-    </div>
-     
-     <div class="footer-column col-md-4">
-       <h3>Contact Us</h3>
-       <ul>
-         <li><i class="bi bi-telephone"></i>&nbsp;&nbsp; 0966 948 7089</li>
-         <li><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i>&nbsp;&nbsp;Facebook Page</a></li>
-       </ul>
-     </div>
-     
-     <div class="footer-column col-md-4">
-       <div class="container">
-         <h2>New to Quick Pick?</h2>
-         <p>Sign up for emails to get the latest updates</p>
-         
-         <div class="input-group mb-3">
-           <input type="email" class="form-control" placeholder="Enter email address" aria-label="Enter email address" aria-describedby="basic-addon2">
-           <button class="btn btn-primary" type="button">Subscribe</button>
-         </div>
-       </div>
-     </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy; 2023 Quick Pick All Rights Reserved.</p>
-  </div>
-</footer>
+<?php include("footer.php")?>
 
 
 <!-- JavaScript -->
