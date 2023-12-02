@@ -30,7 +30,8 @@
          <p>Sign up for emails to get the latest updates</p>
          
          <div class="input-group mb-3">
-           <input type="email" class="form-control" placeholder="Enter email address" aria-label="Enter email address" aria-describedby="basic-addon2">
+           <!-- Added id to the email input field -->
+           <input type="email" id="email" class="form-control" placeholder="Enter email address" aria-label="Enter email address" aria-describedby="basic-addon2">
            <button class="btn btn-primary" onclick="btnFunction()" type="button">Subscribe</button>
          </div>
        </div>
@@ -42,31 +43,34 @@
   </div>
 </footer>
 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
   function btnFunction() {
-        // Checking the values of name, email, subject, and message fields.
-        if(document.getElementById('email').value) {
-            var email = document.getElementById('email').value;
-            Email.send({
-        SecureToken:  "a5c3fcfe-a1b6-493e-9de5-06fc2586ef9f",
-        Host : "smtp.elasticemail.com",
-        Username : "quickpic38@gmail.com",
-        Password : "E718FE409BB81367C0A1CC58277CB96CC194",
-        To : 'jjclucas.student@ua.edu.ph',
+    // Checking the value of the email field.
+    var email = document.getElementById('email').value;
+    
+    // Checking if the email is not empty.
+    if (email.trim() !== "") {
+      Email.send({
+        SecureToken: "a5c3fcfe-a1b6-493e-9de5-06fc2586ef9f",
+        Host: "smtp.elasticemail.com",
+        Username: "quickpic38@gmail.com",
+        Password: "E718FE409BB81367C0A1CC58277CB96CC194",
+        To: 'jjclucas.student@ua.edu.ph',
         From: 'quickpic38@gmail.com',
-        Subject : "Subscriber: ",
-    Body : 'Email: '  +email
-  }).then(
-  message => alert(message)
-);
-            alert("Form Submitted Successfully");
-        } else {
-            // Displaying an error message
-            alert("Please fill in all fields");
+        Subject: "Subscriber: ",
+        Body: 'Email: ' + email
+      }).then(
+        message => {
+          alert("Form Submitted Successfully");
+          console.log(message);
         }
+      );
+    } else {
+      // Displaying an error message
+      alert("Please fill in the email field");
     }
+  }
 </script>
 </body>
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
 </html>
