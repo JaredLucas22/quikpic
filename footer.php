@@ -56,7 +56,7 @@
         Host: "smtp.elasticemail.com",
         Username: "quickpic38@gmail.com",
         Password: "E718FE409BB81367C0A1CC58277CB96CC194",
-        To: 'jjclucas.student@ua.edu.ph',
+        To: 'casquiambao.student@ua.edu.ph',
         From: 'quickpic38@gmail.com',
         Subject: "Subscriber: ",
         Body: 'Email: ' + email
