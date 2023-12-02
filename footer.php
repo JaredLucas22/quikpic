@@ -5,9 +5,6 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Quick Pick - Home</title>
  <!-- Bootstrap CSS -->
- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
- <link rel="icon" href="logo.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -34,7 +31,7 @@
          
          <div class="input-group mb-3">
            <input type="email" class="form-control" placeholder="Enter email address" aria-label="Enter email address" aria-describedby="basic-addon2">
-           <button class="btn btn-primary" type="button">Subscribe</button>
+           <button class="btn btn-primary" onclick="btnFunction()" type="button">Subscribe</button>
          </div>
        </div>
      </div>
@@ -46,18 +43,18 @@
 </footer>
 
 <script>
-    function btnFunction() {
+  function btnFunction() {
         // Checking the values of name, email, subject, and message fields.
         if(document.getElementById('email').value) {
             var email = document.getElementById('email').value;
             Email.send({
-    SecureToken:  "c32f4d27-1985-42e5-a501-97fc5a3d8d94",
-    Host : "smtp.elasticemail.com",
-    Username : "jjclucas.student@ua.edu.ph",
-    Password : "2A5E62567D00C93DC8BCA9548E8CB20C5A84",
-    To : 'nutjabhd@gmail.com',
-    From: 'jjclucas.student@ua.edu.ph',
-    Subject : "Contact Service",
+        SecureToken:  "a5c3fcfe-a1b6-493e-9de5-06fc2586ef9f",
+        Host : "smtp.elasticemail.com",
+        Username : "quickpic38@gmail.com",
+        Password : "E718FE409BB81367C0A1CC58277CB96CC194",
+        To : 'jjclucas.student@ua.edu.ph',
+        From: 'quickpic38@gmail.com',
+        Subject : "Subscriber: ",
     Body : 'Email: '  +email
   }).then(
   message => alert(message)
