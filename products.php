@@ -35,6 +35,12 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="owner.html">Owner</a>
+<<<<<<< Updated upstream
+=======
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+>>>>>>> Stashed changes
         </li>
       </ul>
     </div>
@@ -169,6 +175,7 @@
 
 <!-- Location -->
 <div class="location">
+<<<<<<< Updated upstream
   <img src="Graphics/We're nearby..png" alt="" width="100%">
 </div>
 
@@ -202,6 +209,16 @@
        </div>
      </div>
   </div>
+=======
+  <div class="image-container">
+     <img src="Graphics/We're nearby..png" alt="Location Image">
+     <a href="location.html"><button class="btn">Find our Quick Pick Stores</button></a>
+  </div>
+ </div>
+
+<!-- Footer -->
+<?php include("footer.php")?>
+>>>>>>> Stashed changes
 
   <div class="footer-bottom">
     <p>&copy; 2023 Quick Pick All Rights Reserved.</p>

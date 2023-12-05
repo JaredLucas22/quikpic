@@ -49,10 +49,42 @@
 </footer>
 
 
+<<<<<<< Updated upstream
 <!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+=======
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function btnFunction() {
+    // Checking the value of the email field.
+    var email = document.getElementById('email').value;
+    
+    // Checking if the email is not empty.
+    if (email.trim() !== "") {
+      Email.send({
+        SecureToken: "a5c3fcfe-a1b6-493e-9de5-06fc2586ef9f",
+        Host: "smtp.elasticemail.com",
+        Username: "quickpic38@gmail.com",
+        Password: "E718FE409BB81367C0A1CC58277CB96CC194",
+        To: 'jjclucas.student@ua.edu.ph',
+        From: 'quickpic38@gmail.com',
+        Subject: "Subscriber: ",
+        Body: 'Email: ' + email
+      }).then(
+        message => {
+          alert("Form Submitted Successfully");
+          console.log(message);
+        }
+      );
+    } else {
+      // Displaying an error message
+      alert("Please fill in the email field");
+    }
+  }
+</script>
+>>>>>>> Stashed changes
 </body>
 </html>

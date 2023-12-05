@@ -36,6 +36,12 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="owner.html">Owner</a>
+<<<<<<< Updated upstream
+=======
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+>>>>>>> Stashed changes
         </li>
       </ul>
     </div>
@@ -150,6 +156,7 @@
 
 <!-- Location -->
 <div class="location">
+<<<<<<< Updated upstream
   <img src="Graphics/We're nearby..png" alt="" width="100%">
 </div>
 
@@ -190,6 +197,16 @@
 </footer>
 
 
+=======
+  <div class="image-container">
+     <img src="Graphics/We're nearby..png" alt="Location Image">
+     <a href="location.html"><button class="btn">Find our Quick Pick Stores</button></a>
+  </div>
+ </div>
+
+<!-- Footer -->
+<?php include("footer.php")?>
+>>>>>>> Stashed changes
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
